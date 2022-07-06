@@ -68,3 +68,23 @@
 
     background-color:#fff;
 }
+
+.content > form > .text-box{
+    width:504px;
+    height:40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin:auto;
+}
+
+.content > form > .text-box > a{
+    text-decoration: none;
+    font-family: 'SUIT';
+    font-weight:600;
+
+
+    color:#1F1B1B;
+}
