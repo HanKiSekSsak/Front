@@ -41,7 +41,7 @@
     border-radius:5px;
 }
 
-.content > form > input[type=button]{
+.content > form > input[type=submit]{
     width:504px;
     height:50px;
 
@@ -59,7 +59,7 @@
     color:#fff;
 }
 
-.content > form > input[type=button]:hover{
+.content > form > input[type=submit]:hover{
     width:500px;
 
     color:#42C1C1;
