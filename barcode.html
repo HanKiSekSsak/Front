@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한끼슥싹</title>
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/barcode.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./image/Logo.svg"/>
+    </div>
+
+    <div class="content">
+        <form class="barcode-box">
+
+            <h2>재료 정보를 입력해주세요</h2>
+            <input type="text" name="name" id="user-id" placeholder="재료 이름을 입력해주세요">
+            <input type="password" name="password" id="user-password" placeholder="유통기한을 입력해주세요">
+
+            <input type="submit" id="submit" value="등록">
+        </form>
+    </div>
+
+    <script src="./js/barcode.js"></script>
+</body>
+</html>
