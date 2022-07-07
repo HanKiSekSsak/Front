@@ -156,6 +156,10 @@
     cursor:pointer;
 }
 
+#secret-form{
+    display: none;
+}
+
 .color1{
     background-color: #826D6D;
 }
