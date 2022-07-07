@@ -15,101 +15,93 @@ body{
     height:100vh;
 
     background-color:#fff;
+    overflow: hidden;
 }
 
 body > .header{
-    width:100vw;
-    height:4em;
+    width:80%;
+    height:100px;
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     background-color: #fff;
+
+    margin:auto;
 }
 
 body > .header > .logo{
-    position: absolute;
-    width: 158px;
-    height: 46px;
-    left: 320px;
-    top: 42px;
-
-    background: linear-gradient(180deg, #FFFFFF 100%);
+    width:150px;
 }
 
 body > hr{
-    position: absolute;
-    right: 320px;
-    height: 1px;
-    top: 110px;
-    left: 320px;
+    width:80%;
+    height:1px;
 
+    margin:auto;
     background: #E1E1E1;
 }
 
-body > .recipe > p{
-    position: absolute;
-    width: 132px;
-    height: 32px;
-    left: 320px;
-    top: 175px;
+body > .recipe{
+    width: calc(80% - 40px);
+    height:100px;
+
+    margin:auto;
+    margin-top:30px;
+
+    padding-left:20px;
+    padding-right:20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > .recipe > .icon-box{
+    width:200px;
+}
+
+body > .recipe > .icon-box > p{
 
     font-family: 'SUIT';
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 32px;
 /* identical to box height, or 133% */
 
-color: #1F1B1B;
+    color: #1F1B1B;
 }
 
-body > .recipe > .interests{
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 320px;
-    top: 145px;
+body > .recipe > .icon-box > .interests{
+    width:40px;
 }
 
 body > .recipe > .refresh-box{
-    width: 132px;
-    height:120px;
+    width: 150px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 50px;
-    margin-right:20px;
 }
 
 body > .recipe > .refresh-box > .material-symbols-outlined {
+
+    width:100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 12px;
-    gap: 10px;
 
-    position: absolute;
-    width: 89px;
-    height: 22px;
-    right: 320px;
-    top: 169px;
 
-    background: linear-gradient(180deg, #42C1C1 0%, #42B2C1 100%);
+    background-color: #42C1C1;
     border-radius: 12px;
 
     cursor: pointer;
     user-select: none;
-}
-
-body > .recipe > .refresh-box > .material-symbols-outlined:hover{
-    background-color:#fff;
-    border:1.5px solid #42C1C1;
-    color: #42B2C1 100%;
 }
 
 body > .recipe > div > div > p{
@@ -149,33 +141,32 @@ body > .content-box > .content{
 }
 
 body > .content-box > .content > .top{
-    width:57%;
-    height:50%;
+    width:800px;
+    height:300px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
+    margin:auto;
+    margin-top:50px;
 }
 
 body > .content-box > .content > .top > div{
-    width:50%;
+    width:calc(50% - 50px);
     height:100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 body > .content-box > .content > .top > div > div{
-    width:10%;
+    width:100%;
     height:100%;
-    margin-left: 320px;
 }
 
-body > .content-box > .content > .top > div > div > .img{
-    width: 312px;
-    height: 182.5px;
+body > .content-box > .content > .top > div > div > img{
+    width:100%;
     
-    background: url(.jpg), #E1E1E1;
     border-radius: 12px;
     
     /* Inside auto layout */
@@ -187,14 +178,12 @@ body > .content-box > .content > .top > div > div > .img{
 }
 
 body > .content-box > .content > .top > div > div > p{
-    width: 312px;
-    height: 24px;
 
     font-family: 'SUIT';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 50px;
     /* identical to box height, or 150% */
 
     text-align: center;
@@ -210,16 +199,18 @@ body > .content-box > .content > .top > div > div > p{
 }
 
 body > .content-box > .content > .end{
-    width:57%;
-    height:50%;
+    width:800px;
+    height:300px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    margin:auto;
 
 }
 
 body > .content-box > .content > .end > div{
-    width:50%;
+    width:calc(50% - 50px);
     height:100%;
 
     display: flex;
@@ -229,19 +220,14 @@ body > .content-box > .content > .end > div{
 }
 
 body > .content-box > .content > .end > div > div{
-    width:10%;
-    height:100%;
+    width:100%;
+    height:70%;
 
-    margin-top:30px;
-    margin-left: 320px;
-    
 }
 
-body > .content-box > .content > .end > div > div > .img{
-    width: 312px;
-    height: 182.5px;
+body > .content-box > .content > .end > div > div > img{
+    width:100%;
     
-    background: url(.jpg), #E1E1E1;
     border-radius: 12px;
     
     /* Inside auto layout */
@@ -253,14 +239,12 @@ body > .content-box > .content > .end > div > div > .img{
 }
 
 body > .content-box > .content > .end > div > div > p{
-    width: 312px;
-    height: 24px;
 
     font-family: 'SUIT';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 50px;
     /* identical to box height, or 150% */
 
     text-align: center;
@@ -275,4 +259,11 @@ body > .content-box > .content > .end > div > div > p{
     flex-grow: 1;
 }
 
+img{
+    user-select: none;
+}
 
+
+.secret-form{
+    display: none;
+}

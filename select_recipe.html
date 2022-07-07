@@ -14,8 +14,11 @@
     </div>
     <hr>
     <div class="recipe">
-        <img src="./image/interests.png" class="interests"/>
-        <p>레시피 고르기</p>
+
+        <div class="icon-box">
+            <img src="./image/interests.png" class="interests"/>
+            <p>레시피 고르기</p>
+        </div>
 
         <div class="refresh-box">
             <div class="material-symbols-outlined" style="color:white;">refresh
@@ -26,35 +29,40 @@
     <div class="content-box">
         <div class="content">
             <div class="top">
-                <div class="content">
+                <div class="content" onclick="SelectRecipe(event)">
                     <div class="content-data">
-                        <div class="img"></div>
+                        <img src="./image/chicken.png"/>
                             <p>이름 1</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content" onclick="SelectRecipe(event)">
                     <div class="content-data">
-                        <div class="img"></div>
+                        <img src="./image/chicken.png"/>
                             <p>이름 2</p>
                     </div>
                 </div>
             </div>
 
             <div class="end">
-                <div class="content">
+                <div class="content" onclick="SelectRecipe(event)">
                     <div class="content-data">
-                        <div class="img"></div>
+                        <img src="./image/chicken.png"/>
                             <p>이름 3</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content" onclick="SelectRecipe(event)">
                     <div class="content-data">
-                        <div class="img"></div>
+                        <img src="./image/chicken.png"/>
                         <p>이름 4</p>
                     </div>
                 </div>
             </div>
         </div>
-    
+        
+        <form class="secret-form" id="secret-form" action="" method="">
+            <input type="text" name="recipe" id="recipe-name" value=""/>
+        </form>
+
+        <script src="./js/selectRecipe.js"></script>
 </body>
 </html>
