@@ -183,3 +183,49 @@
 .color6{
     background-color: #5379A5;
 }
+
+@media (max-width:639px){
+    .content{
+        overflow-y: auto;
+        height:100%;
+    }
+    .content > .data-box{
+        margin-top:20px;
+        display: block;
+    }
+
+    .content > .img-box{
+        height:30px;
+    }
+
+    .content > .data-box > .tag-box{
+        width:90%;
+        height:auto;
+
+
+        border:none;
+    }
+
+    .content > .data-box > .category-box{
+        width:99%;
+        height:auto;
+
+        margin-top:20px;
+        padding-left:0;
+
+        padding-bottom:300px;
+    }
+
+    .content > .data-box > .category-box > .input-box{
+        width:99%;
+        justify-content: flex-start;
+    }
+    .content > .data-box > .category-box > .list-box{
+        width:99%;
+    }
+
+    .content > .data-box > .category-box > .input-box > input{
+        height:calc(100% - 8px);
+        font-size:14px;
+    }
+}
