@@ -17,6 +17,8 @@ html,
 body {
   font-family: 'SUIT';
   background: var(--white-color);
+  width:100vw;
+  height:100vh;
 }
 
 .red {
@@ -44,6 +46,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width:80%;
+  height:100px;
+  margin:auto;
 }
 
 header .logo {
@@ -51,17 +57,17 @@ header .logo {
   margin-bottom: 32px;
   height: 36px;
   width: 157px;
-  left: 320px;
-  top: 42px;
+}
+
+header .align-box{
+  width:100%;
 }
 
 header hr {
   color: #E1E1E1;
   height: 1px;
-  width: 640px;
-  left: 320px;
-  top: 110px;
   border-radius: 0px;
+  width:100%;
 }
 
 /* Main-content */
@@ -143,8 +149,6 @@ header hr {
 }
 
 .content .day p {
-  width: 80px;
-  height: 20px;
   color: #ffff;
   text-align: center;
   font-family: 'SUIT';
@@ -152,4 +156,40 @@ header hr {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (max-width:639px){
+  header{
+    width:90%;
+    margin:auto;
+  }
+
+  header > .align-box{
+    width:100%;
+    height:auto;
+  }
+
+  .content{
+    width:90%;
+    margin:auto;
+  }
+
+  .content .sub-title {
+    font-size:22px;
+  }
+
+  .content .align-box {
+    width:90%;
+    margin:auto;
+  }
+  
+  .content .food-list{
+    width:90%;
+    margin:auto;
+    padding-bottom:100px;
+  }
+
+  .content .food-list li{
+    width:100%;
+  }
 }

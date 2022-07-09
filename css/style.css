@@ -15,7 +15,8 @@ body{
     height:100vh;
 
     background-color:#fff;
-    overflow: hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 
 body > .header{
@@ -266,4 +267,57 @@ img{
 
 .secret-form{
     display: none;
+}
+
+@media (max-width:639px){
+    body > .content-box > .content > .top ,  body > .content-box > .content > .end{
+        display: block;
+        width:100%;
+        height:500px;
+    }
+
+    body > .content-box > .content > .top > div, body > .content-box > .content > .end > div{
+        width:100%;
+        height:50%;
+    }
+
+    body > .content-box > .content > .top > div:first-child, body > .content-box > .content > .end > div:first-child{
+        margin-bottom:20px;
+    }
+
+    body > .content-box > .content > .end{
+        margin-top:0;
+    }
+
+    body > .content-box{
+        padding-bottom:100px;
+        height:auto;
+    }
+
+    body > .recipe{
+        display: block;
+        width:80%;
+        height:150px;
+        padding:0;
+    }    
+
+    body > .recipe > .icon-box{
+        height:100px;
+    }
+
+    body > .recipe > .refresh-box{
+        width:100%;
+        height:50px;
+        justify-content: flex-end;
+    }
+
+    body > .recipe > .refresh-box > div{
+        width:150px;
+        margin-top:20px;
+    }
+
+    /* body > .content-box > .content > .top > div > div > img, body > .content-box > .content > .end > div > div > img{
+        width:80%;
+        margin:auto;
+    } */
 }
